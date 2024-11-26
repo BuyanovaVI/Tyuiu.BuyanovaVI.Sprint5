@@ -1,45 +1,38 @@
-﻿using Tyuiu.BuyanovaVI.Sprint5.Task2.V20.Lib;
+﻿using Tyuiu.BuyanovaVI.Sprint5.Task3.V5.Lib;
 
-namespace Tyuiu.BuyanovaVI.Sprint5.Task2.V20
+namespace Tyuiu.BuyanovaVI.Sprint5.Task3.V5
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            int[,] mtrx = new int[3, 3] { { 5, -5, -1 },
-                                          {-4, 2, -4 },
-                                          { -7, 1, 4 }};
-            int rows = mtrx.GetUpperBound(0) + 1;
-            int columns = mtrx.Length / rows;
             DataService ds = new DataService();
+
+            
             Console.Title = "Спринт #5 | Выполнилa: Буянова В. И. | СМАРТб-24-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #5                                                               *");
-            Console.WriteLine("* Тема:                                                                   *");
-            Console.WriteLine("* Задание #1                                                              *");
+            Console.WriteLine("* Тема: Потоковый метод записи данных в бинарный файл                     *");
+            Console.WriteLine("* Задание #3                                                              *");
             Console.WriteLine("* Вариант #5                                                              *");
             Console.WriteLine("* Выполнилa: Буянова В. И. | СМАРТб-24-1                                  *");
             Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* УСЛОВИЕ:                                                                *");
+            Console.WriteLine("* Дано выражение, вычислить его значение при x = 2, результат сохранить   *");
+            Console.WriteLine("* в бинарный файл OutPutFileTask3.bin и вывести на консоль.               *");
+            Console.WriteLine("* Округлить до трёх знаков после запятой.                                 *");
+            Console.WriteLine("*                                                                         *");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("массив: ");
-            for (int i = 0; i < rows; i++)
-            {
-                for (int j = 0; j < columns; j++)
-                {
-                    Console.Write($"{mtrx[i, j]}\t");
-                }
-                Console.WriteLine();
-            }
+
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            string res = ds.SaveToFileTextData(mtrx);
+            string res = ds.SaveToFileTextData(2);
 
             Console.WriteLine("Файл: " + res);
-            Console.WriteLine("Создан!");
-            Console.ReadKey();
+            Console.WriteLine("Создан");
         }
     }
 }
