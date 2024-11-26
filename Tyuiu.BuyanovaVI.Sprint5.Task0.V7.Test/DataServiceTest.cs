@@ -7,7 +7,7 @@ namespace Tyuiu.BuyanovaVI.Sprint5.Task0.V7.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void ValidSaveToFileTextData()
         {
             string path = @"C:\Users\vbuya\source\repos\Tyuiu.BuyanovaVI.Sprint5\Tyuiu.BuyanovaVI.Sprint5.Task0.V7\bin\Debug\net8.0\OutPutFileTask0.txt";
             FileInfo fileInfo = new FileInfo(path);
