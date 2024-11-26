@@ -13,7 +13,7 @@ namespace Tyuiu.BuyanovaVI.Sprint5.Task4.V16
             Console.WriteLine("* Тема: Базовые навыки работы в с#                                            *");
             Console.WriteLine("* Задание #5                                                                  *");
             Console.WriteLine("* Вариант #16                                                                 *");
-            Console.WriteLine("* Выполнилa: Буянова В. И. | СМАРТб-24-1                                  *");
+            Console.WriteLine("* Выполнилa: Буянова В. И. | СМАРТб-24-1                                      *");
             Console.WriteLine("*******************************************************************************");
             Console.WriteLine("* Условие                                                                     *");
             Console.WriteLine("* Прочитать значение из файла и подставить вместо Х в формуле . Вычислить     *");
