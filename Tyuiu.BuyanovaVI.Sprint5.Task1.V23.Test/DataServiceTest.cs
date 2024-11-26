@@ -10,8 +10,12 @@ namespace Tyuiu.BuyanovaVI.Sprint5.Task1.V23.Test
         {
 
 
+            string direct = System.IO.Path.GetTempPath();
+
+
+
             string path = Path.GetTempFileName();
-            string apath = Path.Combine(path);
+            string apath = Path.Combine(direct, path);
 
             FileInfo fileInfo = new FileInfo(apath);
             bool fileExist = fileInfo.Exists;
